@@ -1,10 +1,40 @@
-input {
-    width: 100%;
+.flex-item {
+    display: flex;
+    align-items: center;
+    /* Align the items vertically */
+    margin-bottom: 5px;
+    /* Add some space between the rows */
+    max-width: 30em;
+
 }
 
-input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
+label {
+    width: 6em;
+    /* Or whatever width suits your design */
+    position: relative;
+    align-items: left;
+    align-content: left;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    flex-grow: 1;
+    /* Makes input take up the remaining space */
+    margin-left: 10px;
+    /* Adds some space between the label and input field */
+    margin-bottom: 5px;
+}
+
+.button {
+    margin-top: 10px;
+    /* Add some space above the button */
+    margin-bottom: 10px;
+    align-items: left;
+
+}
+
+input[type="text"]:focus {
+    border: 3px solid yellow;
 }

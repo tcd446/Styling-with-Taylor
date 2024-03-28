@@ -1,32 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
+    <meta charset="utf-8" />
+    <title>Your first HTML form</title>
+
     <title>Pronouns</title>
+    <link rel="stylesheet" href="forms.css"> <!-- Assuming your CSS file is named style.css -->
 </head>
 
 <body>
+    <div class="mycontainer">
 
-    <label for="pronouns">Preferred Pronouns:</label>
-    <select id="pronouns" name="pronouns">
-        <option value="select">--select--</option>
-        <option value="female">she/her</option>
-        <option value="male">he/him</option>
-        <option value="nonbinary">they/them</option>
+        <div class="flex-item">
+            <label for="pronouns">Preferred Pronouns:</label>
+            <select id="pronouns" name="
+            <option value=" select">--select--</option>
+                <option value="female">she/her</option>
+                <option value="male">he/him</option>
+                <option value="nonbinary">they/them</option>
+            </select>
+        </div>
 
-    </select>
+        <div class="flex-item"></div>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
+    </div>
 
-    <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname">
-    </form>
+    <div class="flex-item"></div>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname">
+    </div>
+
+    <div class="flex-item"></div>
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="user_mail" />
+    </div>
+    
+    <div class="flex-item">
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message"></textarea>
+        <div class="flex-item"></div>
+    </div>
+
+    <class="button">
+        <button type="submit">Submit</button>
 
 
+        </form>
 </body>
-<footer>
-    <!-- Footer content goes here -->
-</footer>
 
 </html>
