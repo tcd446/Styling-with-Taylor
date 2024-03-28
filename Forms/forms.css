@@ -8,33 +8,42 @@
 
 }
 
-label {
-    width: 6em;
-    /* Or whatever width suits your design */
-    position: relative;
-    align-items: left;
-    align-content: left;
-}
+input[type="date"] {
+    font-family: inherit;
+    /* Use the same font family as other form elements */
+    font-size: inherit;
+    /* Use the same font size as other form elements */
+    padding: 0.5em;
+    /* Add padding for better visual appearance */
+    /* Add any additional styles as needed */
 
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-    flex-grow: 1;
-    /* Makes input take up the remaining space */
-    margin-left: 10px;
-    /* Adds some space between the label and input field */
-    margin-bottom: 5px;
-}
+    label {
+        width: 6em;
+        /* Or whatever width suits your design */
+        position: relative;
+        align-items: left;
+        align-content: left;
+    }
 
-.button {
-    margin-top: 10px;
-    /* Add some space above the button */
-    margin-bottom: 10px;
-    align-items: left;
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        flex-grow: 1;
+        /* Makes input take up the remaining space */
+        margin-left: 10px;
+        /* Adds some space between the label and input field */
+        margin-bottom: 5px;
+    }
 
-}
+    .button {
+        margin-top: 10px;
+        /* Add some space above the button */
+        margin-bottom: 10px;
+        align-items: left;
 
-input[type="text"]:focus {
-    border: 3px solid yellow;
-}
+    }
+
+    input[type="text"]:focus {
+        border: 3px solid yellow;
+    }
