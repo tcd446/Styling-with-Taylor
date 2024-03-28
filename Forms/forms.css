@@ -1,28 +1,22 @@
 .flex-item {
     display: flex;
     align-items: center;
-    /* Align the items vertically */
-    margin-bottom: 5px;
-    /* Add some space between the rows */
+    margin-bottom: 1px;
+    /* Adjust the space between rows as needed */
     max-width: 30em;
 }
 
 input[type="date"] {
     font-family: inherit;
     font-size: inherit;
-    padding: 15em;
     margin-left: 10px;
-    height: auto;
+    height: 0.5em;
     /* Adjust the height to match other input fields */
 }
 
 label {
     width: 6em;
-    /* Or whatever width suits your design */
     position: relative;
-    /* Note: align-items and align-content are not valid properties for label */
-    /* align-items: left; */
-    /* align-content: left; */
 }
 
 input[type="text"],
@@ -30,18 +24,13 @@ input[type="email"],
 select,
 textarea {
     flex-grow: 1;
-    /* Makes input take up the remaining space */
     margin-left: 10px;
-    /* Adds some space between the label and input field */
-    margin-bottom: 15px;
+
 }
 
 .button {
     margin-top: 10px;
-    /* Add some space above the button */
-    margin-bottom: 5px;
-    align-items: left;
-    /* This property is not applicable here */
+
 }
 
 input[type="text"]:focus {
