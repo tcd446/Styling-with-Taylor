@@ -8,7 +8,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     var dob = document.getElementById("dob").value;
     var phone = document.getElementById("phone").value; // Get phone number
 
-    // Validate first name, last name, email, and phone number
+    // Validate first name, last name, and email
     if (!isValidName(firstName) || !isValidName(lastName)) {
         showMessage("Please enter a valid first and last name.", "error");
         return;
@@ -34,4 +34,11 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     showMessage("Form submitted successfully.", "success");
     // Clear form fields
     document.getElementById("myForm").reset();
-});
+}
+
+
+function showMessage(message, type) {
+        var messageDiv = document.getElementById("message");
+        messageDiv.innerHTML = message;
+        messageDiv.className = type; // Set CSS class for styling, 'error' or 'success'
+    }
