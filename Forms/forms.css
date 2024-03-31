@@ -1,7 +1,7 @@
 .flex-item {
     display: flex;
     align-items: center;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
     /* Adjust the space between rows as needed */
     max-width: 30em;
 }
@@ -10,6 +10,7 @@ input[type="date"] {
     font-family: inherit;
     font-size: inherit;
     margin-left: 10px;
+    margin-bottom: 10px;
     height: 5px;
     /* Adjust the height to match other input fields */
 }
@@ -17,6 +18,7 @@ input[type="date"] {
 label {
     width: 6em;
     position: relative;
+
 }
 
 input[type="text"],
@@ -25,7 +27,7 @@ select,
 textarea {
     flex-grow: 1;
     margin-left: 10px;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
 
 }
 

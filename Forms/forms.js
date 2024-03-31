@@ -1,4 +1,3 @@
-
 document.getElementById("myForm").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent default form submission
 
@@ -7,22 +6,28 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     var lastName = document.getElementById("lastName").value;
     var email = document.getElementById("email").value;
     var dob = document.getElementById("dob").value;
+    var phone = document.getElementById("phone").value; // Get phone number
 
-    // Validate first name, last name, and email
+    // Validate first name, last name, email, and phone number
     if (!isValidName(firstName) || !isValidName(lastName)) {
         showMessage("Please enter a valid first and last name.", "error");
-        return; // Exit early if validation fails
+        return;
     }
 
     if (email.trim() === "") {
         showMessage("Please enter your email.", "error");
-        return; // Exit early if validation fails
+        return;
     }
 
-    // Validate date of birth
     if (!isValidDateOfBirth(dob)) {
         showMessage("Please enter a valid date of birth (1901 or later).", "error");
-        return; // Exit early if validation fails
+        return;
+    }
+
+    // Validate phone number
+    if (!isValidPhoneNumber(phone)) {
+        showMessage("Please enter a valid phone number with exactly 10 digits.", "error");
+        return;
     }
 
     // Simulate successful form submission
@@ -30,29 +35,3 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     // Clear form fields
     document.getElementById("myForm").reset();
 });
-
-function isValidName(name) {
-    // Simple validation: check if the name contains only letters and is not empty
-    return /^[a-zA-Z]+$/.test(name.trim());
-}
-
-function isValidDateOfBirth(dob) {
-    // Validate date format (YYYY-MM-DD) using regular expression
-    var datePattern = /^\d{4}-\d{2}-\d{2}$/;
-    if (!datePattern.test(dob)) {
-        return false;
-    }
-
-    // Parse the date string
-    var parts = dob.split("-");
-    var year = parseInt(parts[0], 10);
-
-    // Check if the year is 1901 or later
-    return (year >= 1901);
-}
-
-function showMessage(message, type) {
-    var messageDiv = document.getElementById("message");
-    messageDiv.innerHTML = message;
-    messageDiv.className = type; // Set CSS class for styling
-}
