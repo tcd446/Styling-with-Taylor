@@ -1,28 +1,49 @@
 .flex-item {
     display: flex;
-    align-items: center;
+    align-items: left;
     margin-bottom: 10px;
     /* Adjust the space between rows as needed */
     max-width: 30em;
 }
 
+input[type="phone"],
 input[type="date"] {
     font-family: inherit;
     font-size: inherit;
     margin-left: 10px;
     margin-bottom: 10px;
-    height: 5px;
+    max-width: 30em;
+    display: inline-block;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    height: fit-content;
     /* Adjust the height to match other input fields */
 }
 
 label {
-    width: 6em;
+    width: 6px;
     position: relative;
 
 }
 
-input[type="text"],
-input[type="email"],
+input[type=text] {
+    max-width: 30em;
+    padding: 2px 2%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+
+input[type="email"] {
+    max-width: 30em;
+    padding: 2px 2%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-left: 45px;
+    display: inline-block;
+}
+
 select,
 textarea {
     flex-grow: 1;
@@ -31,9 +52,10 @@ textarea {
 
 }
 
-.button {
+.submit-button {
     margin-top: 10px;
-
+    padding: 20px;
+    margin-left: 20px:
 }
 
 input[type="text"]:focus {
