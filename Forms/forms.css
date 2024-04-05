@@ -6,23 +6,23 @@
     max-width: 30em;
 }
 
+
 input[type="phone"],
 input[type="date"] {
-    font-family: inherit;
-    font-size: inherit;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    max-width: 30em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     display: inline-block;
-    padding-bottom: 2px;
-    padding-top: 2px;
-    height: fit-content;
+    height: auto;
+    margin: 8px 0;
+
     /* Adjust the height to match other input fields */
 }
 
 label {
     width: 6px;
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
 
 }
 
@@ -40,7 +40,6 @@ input[type="email"] {
     padding: 2px 2%;
     margin: 8px 0;
     box-sizing: border-box;
-    margin-left: 45px;
     display: inline-block;
 }
 
@@ -48,7 +47,9 @@ select,
 textarea {
     flex-grow: 1;
     margin-left: 10px;
+    padding: 2px 2%;
     margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -61,3 +62,26 @@ textarea {
 input[type="text"]:focus {
     border: 3px solid yellow;
 }
+
+.submit-button {
+    color: rgb(231, 231, 231);
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(56, 26, 223);
+    border-style: none;
+    letter-spacing: 1.1px;
+    border-radius: 8px;
+    font-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.submit-button:hover {
+    opacity: 0.75;
+    transition-delay: 0.05s
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif; /* This matches your input and label font family */
+ }
