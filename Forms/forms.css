@@ -1,87 +1,12 @@
-.flex-item {
-    display: flex;
-    align-items: left;
-    margin-bottom: 10px;
-    /* Adjust the space between rows as needed */
-    max-width: 30em;
+/* forms.css */
+
+/* Additional custom styles if necessary */
+
+/* Example custom style for a specific message class */
+.message-success {
+    color: green;
 }
 
-
-input[type="phone"],
-input[type="date"] {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    display: inline-block;
-    height: auto;
-    margin: 8px 0;
-
-    /* Adjust the height to match other input fields */
+.message-error {
+    color: red;
 }
-
-label {
-    width: 6px;
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-
-}
-
-input[type=text] {
-    max-width: 30em;
-    padding: 2px 2%;
-    margin: 8px 0;
-    box-sizing: border-box;
-    display: inline-block;
-}
-
-
-input[type="email"] {
-    max-width: 30em;
-    padding: 2px 2%;
-    margin: 8px 0;
-    box-sizing: border-box;
-    display: inline-block;
-}
-
-select,
-textarea {
-    flex-grow: 1;
-    margin-left: 10px;
-    padding: 2px 2%;
-    margin-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-.submit-button {
-    margin-top: 10px;
-    padding: 20px;
-    margin-left: 20px;
-}
-
-input[type="text"]:focus {
-    border: 3px solid yellow;
-}
-
-.submit-button {
-    color: rgb(231, 231, 231);
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: rgb(56, 26, 223);
-    border-style: none;
-    letter-spacing: 1.1px;
-    border-radius: 8px;
-    font-style: solid;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-.submit-button:hover {
-    opacity: 0.75;
-    transition-delay: 0.05s
-}
-
-h2 {
-    font-family: Arial, Helvetica, sans-serif; /* This matches your input and label font family */
- }

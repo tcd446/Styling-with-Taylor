@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Slider</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-4 text-center">Image Slider</h1>
+        <div id="slider" class="relative w-64 h-64 overflow-hidden">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/022/963/918/small_2x/ai-generative-cute-cat-isolated-on-solid-background-photo.jpg" class="absolute w-full h-full object-cover active">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK9p3tMRI2TEl1NYNObsbcn83K2wMnybxSGlPWuD7JuFOHauxeNf54xvi08iar07eghDc&usqp=CAU" class="absolute w-full h-full object-cover hidden">
+            <img src="https://t4.ftcdn.net/jpg/03/03/62/45/240_F_303624505_u0bFT1Rnoj8CMUSs8wMCwoKlnWlh5Jiq.jpg" class="absolute w-full h-full object-cover hidden">
+        </div>
+        <div class="flex justify-between mt-4">
+            <button onclick="prevImage()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Previous</button>
+            <button onclick="nextImage()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Next</button>
+        </div>
+    </div>
+
+    <script src="slider.js"></script>
+</body>
+</html>
