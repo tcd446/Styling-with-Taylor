@@ -1,13 +1,7 @@
 {
-	"folders": [
-		{
-			"path": ".."
-		},
-		{
-			"path": "../../JavaScript"
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Styling-with-Taylor"
-	}
+    "folders": [
+        {
+            "path": ".."
+        }
+    ]
 }
