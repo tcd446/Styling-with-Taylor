@@ -10,3 +10,10 @@
 .message-error {
     color: red;
 }
+
+.icon {
+    cursor: pointer;
+    font-size: 0.75rem; /* Adjusted size */
+    color: #6b7280; /* Tailwind gray-500 */
+    margin-left: 0.5rem; /* Space between label and icon */
+}
