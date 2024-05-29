@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch and Display Data</title>
+    <title>Weather App</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
-    <div class="container bg-white p-6 rounded-lg shadow-lg w-80">
-        <h2 class="text-xl font-bold mb-4 text-center">User Information</h2>
-        <button id="fetchButton" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 w-full mb-4">Fetch User Data</button>
-        <button id="fetchMultipleButton" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 w-full mb-4">Fetch Multiple Users</button>
-        <div id="userData" class="text-center mb-4"></div>
-        <div id="userList" class="text-center"></div>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="container bg-white p-4 rounded-lg shadow-lg w-80">
+        <h2 class="text-large font-bold mb-1 text-center">Weather App</h2>
+        <form id="weatherForm" class="mb-4">
+            <label for="city" class="block text-sm font-medium text-gray-700">City Name:</label>
+            <input type="text" id="city" name="city" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 w-full mt-2">Get Weather</button>
+        </form>
+        <div id="weatherResult" class="text-center"></div>
     </div>
 
     <script src="app.js"></script>

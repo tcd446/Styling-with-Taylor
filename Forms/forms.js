@@ -18,6 +18,8 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
         } else {
             showPopup("Form submitted successfully.");
         }
+        // Reset the form after successful submission
+        document.getElementById("myForm").reset();
     }
 });
 
